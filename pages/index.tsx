@@ -107,6 +107,7 @@ const Home: NextPage<DataTypes> = ({ data }) => {
                         placeholder="Search Books"
                         value={category}
                         onChange={(e) => setCategory(e.target.value)}
+                        required
                     ></Form.Control>
                 </FloatingLabel>
                 <Button
