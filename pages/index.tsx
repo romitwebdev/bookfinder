@@ -77,10 +77,8 @@ const Home: NextPage<DataTypes> = ({ data }) => {
         setLoading(true);
         fetchData()
             .then((data) => {
-                setTimeout(() => {
-                    dispatch(addBooks({ args: data }));
-                    setLoading(false);
-                }, 4000);
+                dispatch(addBooks({ args: data }));
+                setLoading(false);
             })
             .catch((err) => {
                 console.log(err);
